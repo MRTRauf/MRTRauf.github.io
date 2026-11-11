@@ -1,7 +1,7 @@
 # Muhammad Rauf — Data Science & AI Portfolio
 
 **Live website:** https://mrtrauf.github.io/  
-**Alternative gallery link:** https://mrtrauf.github.io/gallery.html/
+**Alternative gallery link:** https://mrtrauf.github.io/gallery.html
 
 An independent, responsive personal website for exploring open GitHub repositories. The homepage is a curated **project gallery**, not a Touchline AI research landing page.
 
