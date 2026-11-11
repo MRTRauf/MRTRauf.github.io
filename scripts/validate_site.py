@@ -58,6 +58,8 @@ class Page(HTMLParser):
 
 def color_value(s):
     s = s.lstrip("#")
+    if len(s) == 3:
+        s = "".join(c * 2 for c in s)
     rgb = [int(s[i:i+2], 16)/255 for i in (0,2,4)]
     linear = [v/12.92 if v <= 0.04045 else ((v+.055)/1.055)**2.4 for v in rgb]
     return sum(a*b for a,b in zip(linear, (.2126, .7152, .0722)))
@@ -69,7 +71,7 @@ def contrast(foreground, background):
 def vars_for(text, selector):
     match = re.search(re.escape(selector) + r"\s*\{([^}]+)\}", text)
     assert match, f"Missing palette {selector}"
-    return dict(re.findall(r"--([\w-]+):\s*(#[0-9a-fA-F]{6})", match.group(1)))
+    return dict(re.findall(r"--([\w-]+):\s*(#[0-9a-fA-F]{3}(?:[0-9a-fA-F]{3})?)", match.group(1)))
 
 def main():
     html = HOME.read_text(encoding="utf-8")
