@@ -31,3 +31,36 @@ button:focus-visible,a:focus-visible{outline:3px solid #35eac4;outline-offset:4p
 @media(max-width:1060px){.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.hero-feature .pitch{height:240px}.project-grid{grid-template-columns:minmax(0,1fr);gap:14px;margin-top:25px}.project-card{min-height:0;padding:22px}.project-card h3{font-size:22px}.featured-intro{padding-top:55px}.section-topline{gap:16px}.section-more{white-space:normal}}
 @media(prefers-reduced-motion:reduce){.project-card{transition:none}.project-card:hover,.project-card:focus-within{transform:none}}
+
+
+/* Icon-first public GitHub project hub */
+.hub-hero{grid-template-columns:minmax(0,1fr) 230px;gap:42px;padding:58px 0 34px;align-items:center}
+.hub-hero h1{font-size:clamp(42px,5vw,65px);margin:14px 0 18px}
+.hub-hero .intro{font-size:17px;max-width:730px;margin-bottom:0;line-height:1.65}
+.hub-hero-mark{display:flex;flex-direction:column;align-items:flex-start;border:1px solid #344854;background:linear-gradient(140deg,#15262b,#11201b);border-radius:18px;padding:24px}
+.hub-hero-mark strong{color:#c8f743;font-size:76px;line-height:1;letter-spacing:-.065em}
+.hub-hero-mark span{margin:10px 0 3px;font-weight:800;color:#eff6f4}
+.hub-hero-mark p{margin:0;font-size:12px;line-height:1.5;color:#bed0cf}
+section.hub-projects{padding:32px 0 68px;border-bottom:1px solid var(--line)}
+.hub-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:26px}
+.hub-heading h2{font-size:clamp(28px,3vw,39px);margin:8px 0 6px}
+.hub-subtitle{font-size:15px;margin:0;color:#bccdcf}
+.icon-sprite{position:absolute;width:0;height:0;overflow:hidden}
+.hub-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.hub-tile{--tile-accent:#c8f743;display:flex;flex-direction:column;align-items:flex-start;gap:0;position:relative;min-width:0;min-height:207px;padding:24px;border:1px solid #354a53;background:linear-gradient(150deg,#17252f,#101a21);border-radius:15px;text-decoration:none;color:#eef7f5;transition:transform .18s ease,border-color .18s ease,background .18s ease}
+.hub-tile[data-tone="teal"]{--tile-accent:#51e4c4}
+.hub-tile[data-tone="blue"]{--tile-accent:#8ac8ff}
+.hub-tile[data-tone="orange"]{--tile-accent:#ffbc7b}
+.hub-tile[data-tone="violet"]{--tile-accent:#c7acff}
+.hub-tile:hover{transform:translateY(-3px);border-color:var(--tile-accent);background:linear-gradient(150deg,#20313a,#121f28)}
+.hub-tile:focus-visible{outline:3px solid #fff;outline-offset:3px;border-color:var(--tile-accent)}
+.hub-icon{width:55px;height:55px;display:grid;place-items:center;border-radius:15px;color:var(--tile-accent);background:color-mix(in srgb,var(--tile-accent) 10%,#13242b);border:1px solid color-mix(in srgb,var(--tile-accent) 28%,transparent);margin-bottom:16px}
+.hub-icon svg{width:30px;height:30px;stroke:currentColor;fill:none}
+.hub-tile strong{font-size:18px;line-height:1.22;color:#f3faf8;letter-spacing:-.02em}
+.hub-tag{font-size:12px;color:#b5c9cb;line-height:1.4;margin-top:8px}
+.hub-goto{color:var(--tile-accent);font-size:12px;font-weight:800;letter-spacing:.01em;margin-top:auto;padding-top:16px}
+.hub-tile:hover .hub-goto{text-decoration:underline}
+@media(max-width:850px){.hub-hero{grid-template-columns:minmax(0,1fr);padding:35px 0 24px}.hub-hero-mark{display:none}.hub-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:500px){section.hub-projects{padding-top:20px}.hub-hero h1{font-size:clamp(38px,10vw,52px)}.hub-hero .intro{font-size:15px}.hub-grid{gap:10px}.hub-tile{min-height:185px;padding:15px 13px;border-radius:12px}.hub-icon{width:48px;height:48px;margin-bottom:12px}.hub-icon svg{width:27px;height:27px}.hub-tile strong{font-size:15px}.hub-tag,.hub-goto{font-size:11px}.hub-heading{align-items:flex-start}.hub-heading h2{font-size:28px}}
+@media(max-width:340px){.hub-grid{grid-template-columns:1fr}.hub-tile{min-height:155px}}
+@media(prefers-reduced-motion:reduce){.hub-tile{transition:none}.hub-tile:hover{transform:none}}
