@@ -1,0 +1,1 @@
+window.TOUCHLINE_CONFIG = Object.freeze({dashboardUrl: "https://touchline-ai.streamlit.app/", dashboardUrlVerified: false, githubUrl: "https://github.com/MRTRauf/touchline-ai", githubUrlVerified: false});
