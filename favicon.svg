@@ -1,1 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MRTRauf"><rect width="64" height="64" rx="13" fill="#080d13"/><path d="M13 46V18h9l10 13 10-13h9v28h-9V31L32 44 22 31v15z" fill="#c8f743"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MR logo">
+  <rect width="64" height="64" rx="14" fill="#080f14"/>
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="#364e46" stroke-width="2"/>
+  <text x="32" y="41" fill="#c9f56b" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="900" letter-spacing="-2">MR</text>
+</svg>
