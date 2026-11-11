@@ -64,3 +64,18 @@ section.hub-projects{padding:32px 0 68px;border-bottom:1px solid var(--line)}
 @media(max-width:500px){section.hub-projects{padding-top:20px}.hub-hero h1{font-size:clamp(38px,10vw,52px)}.hub-hero .intro{font-size:15px}.hub-grid{gap:10px}.hub-tile{min-height:185px;padding:15px 13px;border-radius:12px}.hub-icon{width:48px;height:48px;margin-bottom:12px}.hub-icon svg{width:27px;height:27px}.hub-tile strong{font-size:15px}.hub-tag,.hub-goto{font-size:11px}.hub-heading{align-items:flex-start}.hub-heading h2{font-size:28px}}
 @media(max-width:340px){.hub-grid{grid-template-columns:1fr}.hub-tile{min-height:155px}}
 @media(prefers-reduced-motion:reduce){.hub-tile{transition:none}.hub-tile:hover{transform:none}}
+
+/* Home page is a project launcher, not a Touchline research landing page. */
+body.portfolio-hub-only .hub-hero{padding:35px 0 15px;gap:24px}
+body.portfolio-hub-only section.hub-projects{padding:18px 0 55px}
+body.portfolio-hub-only .hub-heading{margin-bottom:20px}
+body.portfolio-hub-only .hub-hero h1{font-size:clamp(38px,4.5vw,58px)}
+body.portfolio-hub-only .hub-hero-mark{padding:20px}
+body.portfolio-hub-only .hub-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:15px}
+body.portfolio-hub-only .hub-footer p{flex:1;max-width:520px;font-size:13px;margin:0}
+body.portfolio-hub-only .hub-footer a{font-size:13px}
+@media(max-width:600px){
+ body.portfolio-hub-only .hub-hero{padding:24px 0 10px}
+ body.portfolio-hub-only section.hub-projects{padding:18px 0 38px}
+ body.portfolio-hub-only .hub-footer{flex-direction:column;align-items:flex-start}
+}
