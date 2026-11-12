@@ -12,7 +12,7 @@ MIRROR = ROOT / "gallery.html"
 STYLE = ROOT / "style.css"
 JS = ROOT / "site.js"
 EXPECTED_PROJECTS = {
-    "touchline-ai", "clubops-intelligence-public", "network-kpi-anomaly-detector",
+    "touchline-ai", "pathwaylab", "clubops-intelligence-public", "network-kpi-anomaly-detector",
     "predictive-maintenance-rul", "science-trend-radar",
     "network-slicing-decision-support-tool", "bluesky-polarization-coordination",
     "patent_prior_screening", "drinking-water-quality-prediction",
@@ -105,7 +105,7 @@ def main():
         for fore, bg in (("ink", "bg"), ("muted", "surface"), ("accent-ink", "accent")):
             actual = contrast(vals[fore], vals[bg])
             assert actual >= 4.5, f"WCAG contrast {theme} {fore}/{bg}: {actual:.2f}"
-    print("PASS: 11 public repository icons, assets, anchors, icons, metadata, interactions, theme contrast, duplicate gallery")
+    print("PASS: 12 public repository icons, assets, anchors, icons, metadata, interactions, theme contrast, duplicate gallery")
 
 if __name__ == "__main__":
     main()
