@@ -21,6 +21,7 @@ An independent, responsive personal website for exploring open GitHub repositori
 | Project | Repository |
 | --- | --- |
 | Touchline AI | [MRTRauf/touchline-ai](https://github.com/MRTRauf/touchline-ai) |
+| PathwayLab | [MRTRauf/pathwaylab](https://github.com/MRTRauf/pathwaylab) |
 | ClubOps Intelligence | [MRTRauf/clubops-intelligence-public](https://github.com/MRTRauf/clubops-intelligence-public) |
 | Network KPI Detector | [MRTRauf/network-kpi-anomaly-detector](https://github.com/MRTRauf/network-kpi-anomaly-detector) |
 | Predictive Maintenance RUL | [MRTRauf/predictive-maintenance-rul](https://github.com/MRTRauf/predictive-maintenance-rul) |
