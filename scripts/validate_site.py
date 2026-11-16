@@ -12,6 +12,14 @@ MIRROR = ROOT / "gallery.html"
 STYLE = ROOT / "style.css"
 JS = ROOT / "site.js"
 EXPECTED_PROJECTS = {
+    "vaderindo",
+    "BelajarDS",
+    "PenugasanDSOTI2020",
+    "Exercise1-SoftEng-WorkerOOPJava",
+    "Exercise2-SoftEng-InterfacesExercise",
+    "Exercise-SoftEng-JUnit---Library-Management-System",
+    "ExerciseOOD-VehicleTaxOOD",
+    "MRTRauf.github.io",
     "touchline-ai", "pathwaylab", "clubops-intelligence-public", "network-kpi-anomaly-detector",
     "predictive-maintenance-rul", "science-trend-radar",
     "network-slicing-decision-support-tool", "bluesky-polarization-coordination",
@@ -86,7 +94,7 @@ def main():
     assert page.external_scripts == ["site.js"], "Unexpected scripts"
     assert len(page.cards) == len(EXPECTED_PROJECTS), "Unexpected icon card count"
     assert set(page.cards) == {f"https://github.com/MRTRauf/{name}" for name in EXPECTED_PROJECTS}
-    assert page.project_categories == {"football", "networks", "ml", "research", "ip"}
+    assert page.project_categories == {"football", "networks", "ml", "research", "ip", "learning", "web"}
     for name in page.local_links:
         assert (ROOT / name).is_file(), f"Missing local asset: {name}"
     assert 'id="project-search"' in html and 'id="result-status"' in html
@@ -105,7 +113,7 @@ def main():
         for fore, bg in (("ink", "bg"), ("muted", "surface"), ("accent-ink", "accent")):
             actual = contrast(vals[fore], vals[bg])
             assert actual >= 4.5, f"WCAG contrast {theme} {fore}/{bg}: {actual:.2f}"
-    print("PASS: 12 public repository icons, assets, anchors, icons, metadata, interactions, theme contrast, duplicate gallery")
+    print("PASS: 20 public repository icons, assets, anchors, icons, metadata, interactions, theme contrast, duplicate gallery")
 
 if __name__ == "__main__":
     main()

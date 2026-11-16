@@ -56,19 +56,10 @@
     </div>
   </header>
   <main id="main">
-    <section class="shell hero" id="top" aria-labelledby="hero-title">
-      <div>
-        <p class="eyebrow">MUHAMMAD RAUF · COMMUNICATIONS ENGINEERING</p>
-        <h1 id="hero-title">Radio signals.<br><em>Network decisions.</em></h1>
-        <p class="hero-desc">I’m Rauf, an Erasmus Mundus master’s student studying communications engineering and data science. I build tools to inspect radio signals, select 5G network slices, and spot unusual network behaviour.</p>
-        
-        <div class="hero-actions"><a class="primary-link" href="#projects">Browse projects <svg width="17" height="17" aria-hidden="true"><use href="#icon-arrow"></use></svg></a><a class="secondary-link" href="#about">About me <span aria-hidden="true">↗</span></a></div>
-      </div>
-      <figure class="radio-figure"><a href="https://github.com/MRTRauf/l1-ml-signal-analytics"><img src="https://raw.githubusercontent.com/MRTRauf/l1-ml-signal-analytics/main/figures/constellation_sweep_qpsk.png" alt="QPSK constellation diagrams from the RadioML signal analysis project"></a><figcaption><small>RADIO SIGNAL ANALYSIS</small><h2>Reading a constellation</h2><p>How does noise change a QPSK signal? Compare the spread of its samples across signal-to-noise ratios.</p><a href="https://github.com/MRTRauf/l1-ml-signal-analytics">Explore the analysis ↗</a></figcaption></figure>
-    </section>
+    <section class="shell studio" id="top"><div><p class="eyebrow">ENGINEERING &amp; DATA SCIENCE</p><h1>Muhammad<br><em>Rauf.</em></h1><p class="studio-intro">I study communications engineering and data science. My projects range from reading radio signals to comparing football players, forecasting equipment life and searching patent literature.</p><a href="#projects">Explore my work ↓</a></div><nav class="field-map" aria-label="Explore project fields"><a href="#field-networks" style="--field:#a6dbf5"><svg aria-hidden="true" viewBox="0 0 48 48"><use href="#icon-signal"></use></svg><span>Telecommunications</span><i aria-hidden="true">↘</i></a><a href="#field-football" style="--field:#cce9a0"><svg aria-hidden="true" viewBox="0 0 48 48"><use href="#icon-pitch"></use></svg><span>Football analytics</span><i aria-hidden="true">↘</i></a><a href="#field-ml" style="--field:#ffca91"><svg aria-hidden="true" viewBox="0 0 48 48"><use href="#icon-maintenance"></use></svg><span>Applied machine learning</span><i aria-hidden="true">↘</i></a><a href="#field-research" style="--field:#d8c2ef"><svg aria-hidden="true" viewBox="0 0 48 48"><use href="#icon-radar"></use></svg><span>Language & network research</span><i aria-hidden="true">↘</i></a><a href="#field-ip" style="--field:#a3dacd"><svg aria-hidden="true" viewBox="0 0 48 48"><use href="#icon-patent"></use></svg><span>Intellectual property</span><i aria-hidden="true">↘</i></a><a href="#field-learning" style="--field:#f4bfc7"><svg aria-hidden="true" viewBox="0 0 48 48"><use href="#icon-grid"></use></svg><span>Learning & software engineering</span><i aria-hidden="true">↘</i></a><a href="#field-web" style="--field:#e3d7ad"><svg aria-hidden="true" viewBox="0 0 48 48"><use href="#icon-list"></use></svg><span>Web development</span><i aria-hidden="true">↘</i></a></nav></section>
 
     <section class="shell work" id="projects" aria-labelledby="projects-heading">
-      <div class="section-head"><div><p class="section-label">PROJECT INDEX</p><h2 id="projects-heading">Selected projects<span aria-hidden="true">.</span></h2><p>Each card opens the repository, including its code and README. Use the filters to find a particular kind of project.</p></div><span class="section-count"><a href="https://github.com/MRTRauf/MRTRauf/blob/main/README.md#projects">Full project directory ↗</a></span></div>
+      <div class="section-head"><div><p class="section-label">PROJECT INDEX</p><h2 id="projects-heading">Projects by field<span aria-hidden="true">.</span></h2><p>Browse the collections below or search by project, tool or topic.</p></div><span class="section-count"><a href="https://github.com/MRTRauf/MRTRauf/blob/main/README.md#projects">Full project directory ↗</a></span></div>
 
       <div class="work-toolbar">
         <div class="search-wrap"><svg aria-hidden="true"><use href="#icon-search"></use></svg><label class="sr-only" for="project-search">Search projects</label><input id="project-search" type="search" inputmode="search" placeholder="Search projects, tools, topics…" autocomplete="off"><button class="clear-search" id="clear-search" type="button" aria-label="Clear project search" hidden>×</button></div>
@@ -78,17 +69,16 @@
           <button type="button" data-view-button="list" aria-pressed="false" aria-label="List view" title="List view"><svg aria-hidden="true"><use href="#icon-list"></use></svg></button>
         </div>
       </div>
-      <div class="filters" role="group" aria-label="Filter projects by category">
-        <button type="button" class="filter" data-category-filter="all" aria-pressed="true">All projects</button>
-        <button type="button" class="filter" data-category-filter="networks" aria-pressed="false">Telco</button>
-        <button type="button" class="filter" data-category-filter="football" aria-pressed="false">Football</button>
-        <button type="button" class="filter" data-category-filter="ml" aria-pressed="false">Machine learning</button>
-        <button type="button" class="filter" data-category-filter="research" aria-pressed="false">Research</button>
-        <button type="button" class="filter" data-category-filter="ip" aria-pressed="false">IP tools</button>
-      </div>
-      <div class="result-line"><span id="result-status" role="status" aria-live="polite">12 of 12 projects</span><span>Cards open GitHub in a new tab ↗</span></div>
-      <div class="project-grid" id="project-grid" data-view="grid">
-        <a class="project-card" href="https://github.com/MRTRauf/l1-ml-signal-analytics" target="_blank" rel="noopener noreferrer" data-tone="teal" data-category="networks" data-search="Telco telecommunications Layer-1 Signal Analytics SIGNAL PROCESSING RadioML IQ diagnostics: constellation, PSD, EVM and SNR analysis. RadioML IQ radio signal EVM PSD SNR ML" aria-label="Open Layer-1 Signal Analytics GitHub repository in a new tab">
+      <div class="filters" role="group" aria-label="Filter projects by category"><button type="button" class="filter" data-category-filter="all" aria-pressed="true">All projects</button>
+<button type="button" class="filter" data-category-filter="networks" aria-pressed="false">Telecommunications</button>
+<button type="button" class="filter" data-category-filter="football" aria-pressed="false">Football analytics</button>
+<button type="button" class="filter" data-category-filter="ml" aria-pressed="false">Applied machine learning</button>
+<button type="button" class="filter" data-category-filter="research" aria-pressed="false">Language & network research</button>
+<button type="button" class="filter" data-category-filter="ip" aria-pressed="false">Intellectual property</button>
+<button type="button" class="filter" data-category-filter="learning" aria-pressed="false">Learning & software engineering</button>
+<button type="button" class="filter" data-category-filter="web" aria-pressed="false">Web development</button></div>
+      <div class="result-line"><span id="result-status" role="status" aria-live="polite">20 of 20 projects</span><span>Cards open GitHub in a new tab ↗</span></div>
+      <div class="project-grid" id="project-grid" data-view="grid"><section class="discipline" id="field-networks" style="--field:#a6dbf5" aria-labelledby="title-networks"><header><h3 id="title-networks">Telecommunications</h3><p>Radio signals, 5G slicing and network reliability.</p></header><div class="field-cards"><a class="project-card" href="https://github.com/MRTRauf/l1-ml-signal-analytics" target="_blank" rel="noopener noreferrer" data-tone="teal" data-category="networks" data-search="Telco telecommunications Layer-1 Signal Analytics SIGNAL PROCESSING RadioML IQ diagnostics: constellation, PSD, EVM and SNR analysis. RadioML IQ radio signal EVM PSD SNR ML" aria-label="Open Layer-1 Signal Analytics GitHub repository in a new tab">
   <span class="card-top"><span class="card-icon"><svg aria-hidden="true"><use href="#icon-signal"></use></svg></span></span>
   <span class="card-type">SIGNAL PROCESSING</span>
   <strong class="card-title">Layer-1 Signal Analytics</strong>
@@ -108,8 +98,8 @@
   <strong class="card-title">Network KPI Detector</strong>
   <span class="card-desc">Time-series anomaly detection for network KPI incident investigation.</span>
   <span class="card-end"><span>View code <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></span></span>
-</a>
-<a class="project-card" href="https://github.com/MRTRauf/touchline-ai" target="_blank" rel="noopener noreferrer" data-tone="lime" data-category="football" data-search="Touchline AI FOOTBALL INTELLIGENCE Role-aware scouting, explainable player similarity and retrospective ML evidence. Python Streamlit machine learning rankings scouting" aria-label="Open Touchline AI GitHub repository in a new tab">
+</a></div></section>
+<section class="discipline" id="field-football" style="--field:#cce9a0" aria-labelledby="title-football"><header><h3 id="title-football">Football analytics</h3><p>Player scouting, training load and club operations.</p></header><div class="field-cards"><a class="project-card" href="https://github.com/MRTRauf/touchline-ai" target="_blank" rel="noopener noreferrer" data-tone="lime" data-category="football" data-search="Touchline AI FOOTBALL INTELLIGENCE Role-aware scouting, explainable player similarity and retrospective ML evidence. Python Streamlit machine learning rankings scouting" aria-label="Open Touchline AI GitHub repository in a new tab">
   <span class="card-top"><span class="card-icon"><svg aria-hidden="true"><use href="#icon-football"></use></svg></span></span>
   <span class="card-type">FOOTBALL INTELLIGENCE</span>
   <strong class="card-title">Touchline AI</strong>
@@ -129,8 +119,8 @@
   <strong class="card-title">ClubOps Intelligence</strong>
   <span class="card-desc">Validated fixture data, reporting pipelines and interactive football operations briefs.</span>
   <span class="card-end"><span>View code <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></span></span>
-</a>
-<a class="project-card" href="https://github.com/MRTRauf/predictive-maintenance-rul" target="_blank" rel="noopener noreferrer" data-tone="amber" data-category="ml" data-search="Predictive Maintenance APPLIED MACHINE LEARNING NASA CMAPSS remaining-useful-life modeling and maintenance triage. RUL NASA forecasting predictive maintenance Streamlit" aria-label="Open Predictive Maintenance GitHub repository in a new tab">
+</a></div></section>
+<section class="discipline" id="field-ml" style="--field:#ffca91" aria-labelledby="title-ml"><header><h3 id="title-ml">Applied machine learning</h3><p>Engine maintenance and household water quality.</p></header><div class="field-cards"><a class="project-card" href="https://github.com/MRTRauf/predictive-maintenance-rul" target="_blank" rel="noopener noreferrer" data-tone="amber" data-category="ml" data-search="Predictive Maintenance APPLIED MACHINE LEARNING NASA CMAPSS remaining-useful-life modeling and maintenance triage. RUL NASA forecasting predictive maintenance Streamlit" aria-label="Open Predictive Maintenance GitHub repository in a new tab">
   <span class="card-top"><span class="card-icon"><svg aria-hidden="true"><use href="#icon-maintenance"></use></svg></span></span>
   <span class="card-type">APPLIED MACHINE LEARNING</span>
   <strong class="card-title">Predictive Maintenance</strong>
@@ -143,8 +133,8 @@
   <strong class="card-title">Water Quality Prediction</strong>
   <span class="card-desc">Drinking-water feasibility classification experiments with AutoML.</span>
   <span class="card-end"><span>View code <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></span></span>
-</a>
-<a class="project-card" href="https://github.com/MRTRauf/science-trend-radar" target="_blank" rel="noopener noreferrer" data-tone="violet" data-category="research" data-search="Science Trend Radar RESEARCH INTELLIGENCE OpenAlex discovery, TF-IDF and clustering to explore scientific trends. NLP TF-IDF KMeans OpenAlex science clustering" aria-label="Open Science Trend Radar GitHub repository in a new tab">
+</a></div></section>
+<section class="discipline" id="field-research" style="--field:#d8c2ef" aria-labelledby="title-research"><header><h3 id="title-research">Language & network research</h3><p>Scientific literature, sentiment and online communities.</p></header><div class="field-cards"><a class="project-card" href="https://github.com/MRTRauf/science-trend-radar" target="_blank" rel="noopener noreferrer" data-tone="violet" data-category="research" data-search="Science Trend Radar RESEARCH INTELLIGENCE OpenAlex discovery, TF-IDF and clustering to explore scientific trends. NLP TF-IDF KMeans OpenAlex science clustering" aria-label="Open Science Trend Radar GitHub repository in a new tab">
   <span class="card-top"><span class="card-icon"><svg aria-hidden="true"><use href="#icon-radar"></use></svg></span></span>
   <span class="card-type">RESEARCH INTELLIGENCE</span>
   <strong class="card-title">Science Trend Radar</strong>
@@ -158,7 +148,8 @@
   <span class="card-desc">Privacy-aware reply-network polarization and coordination signals.</span>
   <span class="card-end"><span>View code <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></span></span>
 </a>
-<a class="project-card" href="https://github.com/MRTRauf/patent_prior_screening" target="_blank" rel="noopener noreferrer" data-tone="teal" data-category="ip" data-search="Patent Prior-Art Screening IP &amp; SEMANTIC SEARCH Explainable semantic retrieval and ranking of patent prior art. patent Lens semantic search NLP retrieval" aria-label="Open Patent Prior-Art Screening GitHub repository in a new tab">
+<a class="project-card" data-category="research" href="https://github.com/MRTRauf/vaderindo" target="_blank" rel="noopener noreferrer"><strong class="card-title">vaderindo</strong><span class="card-desc">Financial sentiment analysis with VADER lexicons.</span></a></div></section>
+<section class="discipline" id="field-ip" style="--field:#a3dacd" aria-labelledby="title-ip"><header><h3 id="title-ip">Intellectual property</h3><p>Patent discovery and case deadlines.</p></header><div class="field-cards"><a class="project-card" href="https://github.com/MRTRauf/patent_prior_screening" target="_blank" rel="noopener noreferrer" data-tone="teal" data-category="ip" data-search="Patent Prior-Art Screening IP &amp; SEMANTIC SEARCH Explainable semantic retrieval and ranking of patent prior art. patent Lens semantic search NLP retrieval" aria-label="Open Patent Prior-Art Screening GitHub repository in a new tab">
   <span class="card-top"><span class="card-icon"><svg aria-hidden="true"><use href="#icon-patent"></use></svg></span></span>
   <span class="card-type">IP &amp; SEMANTIC SEARCH</span>
   <strong class="card-title">Patent Prior-Art Screening</strong>
@@ -171,8 +162,14 @@
   <strong class="card-title">IP Deadline Tracker</strong>
   <span class="card-desc">CSV-to-SQLite prototype for tracking patent case deadlines and urgency.</span>
   <span class="card-end"><span>View code <svg aria-hidden="true"><use href="#icon-arrow"></use></svg></span></span>
-</a>
-      </div>
+</a></div></section>
+<section class="discipline" id="field-learning" style="--field:#f4bfc7" aria-labelledby="title-learning"><header><h3 id="title-learning">Learning & software engineering</h3><p>Data science coursework, object design and testing.</p></header><div class="field-cards"><a class="project-card" data-category="learning" href="https://github.com/MRTRauf/BelajarDS" target="_blank" rel="noopener noreferrer"><strong class="card-title">BelajarDS</strong><span class="card-desc">Data science practice.</span></a>
+<a class="project-card" data-category="learning" href="https://github.com/MRTRauf/PenugasanDSOTI2020" target="_blank" rel="noopener noreferrer"><strong class="card-title">DSOTI assignments</strong><span class="card-desc">Data science coursework from 2020.</span></a>
+<a class="project-card" data-category="learning" href="https://github.com/MRTRauf/Exercise1-SoftEng-WorkerOOPJava" target="_blank" rel="noopener noreferrer"><strong class="card-title">Worker models in Java</strong><span class="card-desc">An object-oriented programming exercise.</span></a>
+<a class="project-card" data-category="learning" href="https://github.com/MRTRauf/Exercise2-SoftEng-InterfacesExercise" target="_blank" rel="noopener noreferrer"><strong class="card-title">Interfaces exercise</strong><span class="card-desc">Software design practice with interfaces.</span></a>
+<a class="project-card" data-category="learning" href="https://github.com/MRTRauf/Exercise-SoftEng-JUnit---Library-Management-System" target="_blank" rel="noopener noreferrer"><strong class="card-title">Library management tests</strong><span class="card-desc">Testing library operations with JUnit.</span></a>
+<a class="project-card" data-category="learning" href="https://github.com/MRTRauf/ExerciseOOD-VehicleTaxOOD" target="_blank" rel="noopener noreferrer"><strong class="card-title">Vehicle tax models</strong><span class="card-desc">Object-oriented design for vehicle taxation.</span></a></div></section>
+<section class="discipline" id="field-web" style="--field:#e3d7ad" aria-labelledby="title-web"><header><h3 id="title-web">Web development</h3><p>Design and implementation of this project gallery.</p></header><div class="field-cards"><a class="project-card" data-category="web" href="https://github.com/MRTRauf/MRTRauf.github.io" target="_blank" rel="noopener noreferrer"><strong class="card-title">Portfolio website</strong><span class="card-desc">A searchable, accessible project gallery built with HTML, CSS and JavaScript.</span></a></div></section></div>
       <div class="empty-state" id="empty-state" hidden><h3>No matching projects</h3><p>Try another topic or clear the selected category.</p><button type="button" id="reset-projects">Show all projects</button></div>
     </section>
 

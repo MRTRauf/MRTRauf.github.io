@@ -30,6 +30,9 @@
       card.hidden = !visible;
       if (visible) shown++;
     });
+    document.querySelectorAll(".discipline").forEach(section => {
+      section.hidden = !section.querySelector(".project-card:not([hidden])");
+    });
     if (resultStatus) resultStatus.textContent = `${shown} of ${cards.length} projects`;
     if (empty) empty.hidden = shown !== 0;
     if (clearSearch) clearSearch.hidden = !search?.value;
@@ -43,6 +46,8 @@
     });
     render();
   }
+
+  document.querySelectorAll(".field-map a").forEach(link => link.addEventListener("click", () => resetFilters()));
 
   function resetFilters() {
     if (search) search.value = "";
