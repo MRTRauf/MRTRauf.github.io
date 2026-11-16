@@ -223,3 +223,17 @@ button:disabled{cursor:not-allowed;opacity:.65}
 }
 @media (prefers-reduced-motion:reduce){:root{scroll-behavior:auto}.project-card,.project-card::before{transition:none}.project-card:hover{transform:none}}
 @media (prefers-contrast:more){.project-card,.principle,.connect-card,.filter,.search-wrap input{border-width:2px}}
+
+/* Give the signal study and its caption room alongside the introduction. */
+@media(min-width:801px){.hero{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(2rem,5vw,5rem)}}
+.hero h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.055em}
+.hero h1 em{font-style:italic}
+.radio-figure{margin:0;min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.radio-figure img{display:block;width:100%;height:auto;background:white}
+.radio-figure figcaption{padding:1rem 1.4rem 1.3rem}
+.radio-figure small{color:var(--secondary);font:600 .7rem/1.5 ui-monospace,monospace;letter-spacing:.12em}
+.radio-figure h2{font:400 1.8rem/1.2 Georgia,serif;margin:.45rem 0}
+.radio-figure p{color:var(--muted);margin:.4rem 0 .75rem}
+.radio-figure a,.section-count a{text-underline-offset:.22em}
+.card-end{justify-content:flex-end}
+@media(max-width:800px){.hero{grid-template-columns:minmax(0,1fr)}}
